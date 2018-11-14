@@ -1,8 +1,8 @@
-from django.contib.auth.models import User
+from django.contrib.auth.models import User
 from rest_framework import viewsets
-from project.api.serializers import
+from project.api.serializers import UserSerializer
 
-class UserViewSet(viewsets.ModeViewSet):
+class UserViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows users to be viewd or edited.
     """
