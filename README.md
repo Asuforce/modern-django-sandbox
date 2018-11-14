@@ -14,6 +14,9 @@ source venv/bin/activate
 # Install packages
 pip install -Ur requirements/local.txt
 
+# Migrate
+python manage.py migrate
+
 # Run server
 ./manage.py runserver
 ```
