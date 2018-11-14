@@ -19,6 +19,12 @@ python manage.py migrate
 
 # Run server
 ./manage.py runserver
+
+# Create user
+curl -X POST -H 'Accept: application/json' --data 'username=hoge&email=hoge@example.com' http://localhost:8000/users/
+
+# Show users list
+curl -X GET -H 'Accept: application/json' http://localhost:8000/users/
 ```
 
 ## License
